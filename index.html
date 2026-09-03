@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JNV Puto Koderma | Jharkhand</title>
+
+<meta name="description"
+content="Jawahar Navodaya Vidyalaya Puto, Koderma, Jharkhand">
+
+<style>
+
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f5ee;
+    color:#183428;
+    line-height:1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 7%;
+
+    background:rgba(247,245,238,0.95);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid #ddd8c9;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-circle{
+    width:45px;
+    height:45px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#17452f;
+    color:#f1c85b;
+
+    border-radius:50%;
+
+    font-weight:bold;
+    font-size:13px;
+}
+
+.logo-text b{
+    display:block;
+    font-size:17px;
+}
+
+.logo-text small{
+    color:#777;
+    font-size:10px;
+    letter-spacing:1px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#294438;
+    font-weight:bold;
+    font-size:14px;
+}
+
+nav ul li a:hover{
+    color:#a47b16;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:90vh;
+
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    align-items:center;
+
+    padding:80px 8%;
+
+    background:
+    radial-gradient(circle at 90% 20%,#dbead7,transparent 30%),
+    linear-gradient(120deg,#f7f5ee,#edf4e9);
+
+    overflow:hidden;
+}
+
+.hero h5{
+    color:#9a751b;
+    letter-spacing:3px;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+    font-size:clamp(45px,7vw,85px);
+    line-height:1.05;
+}
+
+.hero h1 span{
+    color:#a47b16;
+}
+
+.hero p{
+    max-width:650px;
+    margin:25px 0;
+
+    color:#59675f;
+    font-size:17px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:13px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.btn-primary{
+    background:#17452f;
+    color:white;
+}
+
+.btn-secondary{
+    border:1px solid #aaa;
+    color:#17452f;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* HERO CARD */
+
+.hero-card{
+    height:430px;
+
+    border-radius:35px;
+
+    background:#17452f;
+
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.15);
+}
+
+.hero-card:before{
+    content:"";
+
+    position:absolute;
+    inset:18px;
+
+    border:1px solid #f1c85b77;
+
+    border-radius:25px;
+}
+
+.emblem{
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    border:2px solid #f1c85b;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:45px;
+
+    color:#f1c85b;
+}
+
+.hero-card h2{
+    font-family:Georgia,serif;
+    font-size:32px;
+    margin-top:30px;
+}
+
+.hero-card p{
+    color:#d7ded8;
+    font-size:13px;
+}
+
+/* =========================
+   QUICK FACTS
+========================= */
+
+.facts{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    margin-top:45px;
+
+    border-top:1px solid #d8d4c9;
+
+    padding-top:20px;
+
+    gap:20px;
+}
+
+.fact strong{
+    display:block;
+    font-size:20px;
+}
+
+.fact span{
+    font-size:10px;
+    color:#777;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    margin-bottom:45px;
+}
+
+.section-title small{
+    color:#9a751b;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+
+.section-title h2{
+    font-family:Georgia,serif;
+    font-size:50px;
+    line-height:1.1;
+}
+
+.section-title h2 span{
+    color:#a47b16;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+}
+
+.about-text{
+    color:#59675f;
+    font-size:17px;
+}
+
+.about-text p{
+    margin-bottom:20px;
+}
+
+.quote{
+    border-left:4px solid #c29b38;
+    padding:15px 20px;
+
+    font-family:Georgia,serif;
+    font-size:20px;
+
+    color:#34483c;
+}
+
+.info{
+    background:white;
+
+    border:1px solid #e2ded3;
+
+    border-radius:20px;
+
+    padding:10px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+
+    padding:17px;
+
+    border-bottom:1px solid #eee;
+}
+
+.info-row:last-child{
+    border-bottom:none;
+}
+
+.info-row span{
+    color:#777;
+    font-size:13px;
+}
+
+.info-row b{
+    text-align:right;
+    font-size:13px;
+}
+
+/* =========================
+   CAMPUS
+========================= */
+
+.campus{
+    background:#103424;
+    color:white;
+}
+
+.campus .section-title h2 span{
+    color:#e2bd58;
+}
+
+.campus-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.campus-card{
+    padding:30px;
+
+    border:1px solid #ffffff18;
+
+    background:#ffffff08;
+
+    border-radius:20px;
+}
+
+.campus-card .icon{
+    font-size:25px;
+    color:#e2bd58;
+}
+
+.campus-card h3{
+    font-size:38px;
+    margin-top:15px;
+}
+
+.campus-card p{
+    color:#b7c3bc;
+    font-size:13px;
+}
+
+/* FACILITIES */
+
+.facilities{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:45px;
+}
+
+.facility{
+    background:white;
+    color:#19362a;
+
+    padding:22px;
+
+    border-radius:15px;
+}
+
+.facility h3{
+    margin-bottom:5px;
+}
+
+.facility p{
+    color:#777;
+    font-size:12px;
+}
+
+/* =========================
+   ACADEMICS
+========================= */
+
+.academic-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.academic{
+    min-height:250px;
+
+    padding:28px;
+
+    border-radius:20px;
+
+    background:white;
+
+    border:1px solid #e2ddd1;
+
+    transition:.3s;
+}
+
+.academic:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.academic-number{
+    color:#a17a18;
+    font-weight:bold;
+}
+
+.academic h3{
+    font-family:Georgia,serif;
+    font-size:25px;
+
+    margin-top:50px;
+}
+
+.academic p{
+    color:#6b766f;
+    font-size:13px;
+    margin-top:10px;
+}
+
+/* =========================
+   CAMPUS LIFE
+========================= */
+
+.life-box{
+    background:#e2c56d;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+}
+
+.life-box h2{
+    font-family:Georgia,serif;
+    font-size:50px;
+}
+
+.life-box h2 span{
+    color:#765814;
+}
+
+.life-box p{
+    color:#5e512d;
+    margin-top:15px;
+}
+
+.activities{
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    align-content:center;
+    justify-content:center;
+}
+
+.activities span{
+    background:#ffffff66;
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    background:#f0eee6;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+.contact-item{
+    display:flex;
+    gap:15px;
+
+    padding:20px 0;
+
+    border-bottom:1px solid #ddd8ca;
+}
+
+.contact-icon{
+    font-size:23px;
+}
+
+.contact-item h4{
+    margin-bottom:3px;
+}
+
+.contact-item p{
+    color:#69746e;
+    font-size:14px;
+}
+
+.official{
+    background:#17452f;
+    color:white;
+
+    padding:40px;
+
+    border-radius:25px;
+}
+
+.official small{
+    color:#e2bd58;
+    letter-spacing:2px;
+}
+
+.official h2{
+    font-family:Georgia,serif;
+    font-size:32px;
+    margin:10px 0;
+}
+
+.official p{
+    color:#c5d1ca;
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+.official .btn{
+    background:#e2bd58;
+    color:#183428;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#0b271b;
+    color:#b7c5bd;
+
+    padding:30px 8%;
+
+    display:flex;
+    justify-content:space-between;
+
+    font-size:12px;
+}
+
+footer b{
+    color:white;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    nav ul{
+        display:none;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        padding:70px 6%;
+    }
+
+    .hero-card{
+        height:330px;
+    }
+
+    .facts{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about,
+    .contact-grid,
+    .life-box{
+        grid-template-columns:1fr;
+    }
+
+    .campus-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .facilities,
+    .academic-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:550px){
+
+    section{
+        padding:70px 6%;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .section-title h2{
+        font-size:40px;
+    }
+
+    .facts,
+    .campus-grid,
+    .facilities,
+    .academic-grid{
+        grid-template-columns:1fr;
+    }
+
+    .life-box{
+        padding:35px;
+    }
+
+    .life-box h2{
+        font-size:38px;
+    }
+
+    .info-row{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .info-row b{
+        text-align:left;
+    }
+
+    footer{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+<div class="logo">
+
+<div class="logo-circle">
+JNV
+</div>
+
+<div class="logo-text">
+<b>JNV Puto</b>
+<small>Koderma • Jharkhand</small>
+</div>
+
+</div>
+
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#campus">Campus</a></li>
+
+<li><a href="#academics">Academics</a></li>
+
+<li><a href="#life">Life</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+<div>
+
+<h5>
+NAVODAYA VIDYALAYA SAMITI • PM SHRI SCHOOL
+</h5>
+
+<h1>
+Jawahar Navodaya<br>
+<span>Vidyalaya, Puto</span>
+</h1>
+
+<p>
+A residential co-educational senior secondary school
+in Koderma, Jharkhand, dedicated to academic excellence,
+discipline, talent and all-round development.
+</p>
+
+
+<div class="buttons">
+
+<a href="#about" class="btn btn-primary">
+Explore JNV
+</a>
+
+<a href="#contact" class="btn btn-secondary">
+School Details ↗
+</a>
+
+</div>
+
+
+<div class="facts">
+
+<div class="fact">
+<strong>2001</strong>
+<span>Foundation</span>
+</div>
+
+<div class="fact">
+<strong>30</strong>
+<span>Acres Campus</span>
+</div>
+
+<div class="fact">
+<strong>VI–XII</strong>
+<span>School Level</span>
+</div>
+
+<div class="fact">
+<strong>CBSE</strong>
+<span>Affiliated</span>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="emblem">
+✦
+</div>
+
+<h2>
+Learn. Lead. Serve.
+</h2>
+
+<p>
+ज्ञान • अनुशासन • उत्कृष्टता
+</p>
+
+<p>
+Puto, Koderma, Jharkhand
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+<div class="section-title">
+
+<small>ABOUT THE VIDYALAYA</small>
+
+<h2>
+A place to discover
+<span>potential.</span>
+</h2>
+
+</div>
+
+
+<div class="about">
+
+<div class="about-text">
+
+<p>
+Jawahar Navodaya Vidyalaya, Puto, Koderma is a
+Central Government residential school under
+Navodaya Vidyalaya Samiti.
+</p>
+
+<p>
+The Vidyalaya is affiliated with the Central Board
+of Secondary Education (CBSE) and provides education
+from Class VI to Class XII.
+</p>
+
+<p>
+The school combines academics with sports,
+cultural activities, practical learning, library
+resources and residential campus life.
+</p>
+
+
+<div class="quote">
+
+“Education is not only about marks —
+it is about becoming capable.”
+
+</div>
+
+</div>
+
+
+<div class="info">
+
+<div class="info-row">
+<span>CBSE Affiliation No.</span>
+<b>3440016</b>
+</div>
+
+<div class="info-row">
+<span>UDISE Code</span>
+<b>20050102103</b>
+</div>
+
+<div class="info-row">
+<span>Management</span>
+<b>Navodaya Vidyalaya Samiti</b>
+</div>
+
+<div class="info-row">
+<span>School Type</span>
+<b>Co-educational • Residential</b>
+</div>
+
+<div class="info-row">
+<span>Location</span>
+<b>Puto, Post-Karma, Koderma</b>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CAMPUS
+========================= -->
+
+<section class="campus" id="campus">
+
+<div class="section-title">
+
+<small>THE CAMPUS</small>
+
+<h2>
+Room to <span>grow.</span>
+</h2>
+
+</div>
+
+
+<div class="campus-grid">
+
+<div class="campus-card">
+
+<div class="icon">⌂</div>
+
+<h3>30</h3>
+
+<p>
+Acres of campus
+</p>
+
+</div>
+
+
+<div class="campus-card">
+
+<div class="icon">▦</div>
+
+<h3>14</h3>
+
+<p>
+Classrooms listed in school data
+</p>
+
+</div>
+
+
+<div class="campus-card">
+
+<div class="icon">📚</div>
+
+<h3>6,111+</h3>
+
+<p>
+Books reported in library data
+</p>
+
+</div>
+
+
+<div class="campus-card">
+
+<div class="icon">⚽</div>
+
+<h3>15,000</h3>
+
+<p>
+m² playground area reported
+</p>
+
+</div>
+
+</div>
+
+
+<div class="facilities">
+
+<div class="facility">
+<h3>📚 Library</h3>
+<p>Reading and reference resources</p>
+</div>
+
+<div class="facility">
+<h3>🔬 Laboratories</h3>
+<p>Science and practical learning</p>
+</div>
+
+<div class="facility">
+<h3>🏠 Hostels</h3>
+<p>Residential accommodation for students</p>
+</div>
+
+<div class="facility">
+<h3>🏋 Gymnasium</h3>
+<p>Fitness and physical development</p>
+</div>
+
+<div class="facility">
+<h3>🎵 Music Room</h3>
+<p>Creative and cultural activities</p>
+</div>
+
+<div class="facility">
+<h3>🏓 Indoor Games</h3>
+<p>Indoor sports and recreation</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ACADEMICS
+========================= -->
+
+<section id="academics">
+
+<div class="section-title">
+
+<small>ACADEMICS</small>
+
+<h2>
+Learn beyond the <span>classroom.</span>
+</h2>
+
+</div>
+
+
+<div class="academic-grid">
+
+<div class="academic">
+
+<div class="academic-number">
+01
+</div>
+
+<h3>
+CBSE Curriculum
+</h3>
+
+<p>
+Senior secondary education under the
+Central Board of Secondary Education.
+</p>
+
+</div>
+
+
+<div class="academic">
+
+<div class="academic-number">
+02
+</div>
+
+<h3>
+Science
+</h3>
+
+<p>
+Science education with practical and
+laboratory-based learning.
+</p>
+
+</div>
+
+
+<div class="academic">
+
+<div class="academic-number">
+03
+</div>
+
+<h3>
+Commerce
+</h3>
+
+<p>
+Commerce education is listed among
+the school's academic offerings.
+</p>
+
+</div>
+
+
+<div class="academic">
+
+<div class="academic-number">
+04
+</div>
+
+<h3>
+Activities
+</h3>
+
+<p>
+Competitions, quizzes, exhibitions,
+sports, arts and cultural activities.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CAMPUS LIFE
+========================= -->
+
+<section id="life">
+
+<div class="life-box">
+
+<div>
+
+<small>
+CAMPUS LIFE
+</small>
+
+<h2>
+Study. Sport.
+<span>Create.</span>
+</h2>
+
+<p>
+Residential life gives students opportunities
+to build independence, teamwork and confidence
+alongside academics.
+</p>
+
+</div>
+
+
+<div class="activities">
+
+<span>Sports</span>
+
+<span>Yoga</span>
+
+<span>Music</span>
+
+<span>Art</span>
+
+<span>Science Exhibitions</span>
+
+<span>Scouts & Guides</span>
+
+<span>Quizzes</span>
+
+<span>Cultural Activities</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="section-title">
+
+<small>VISIT / CONTACT</small>
+
+<h2>
+Find JNV <span>Puto.</span>
+</h2>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+📍
+</div>
+
+<div>
+
+<h4>Address</h4>
+
+<p>
+Jawahar Navodaya Vidyalaya,
+Puto, Post-Karma,
+District Koderma,
+Jharkhand — 825409
+</p>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+☎
+</div>
+
+<div>
+
+<h4>Phone</h4>
+
+<p>
++91 6200317598
+</p>
+
+</div>
+
+</div>
+
+
+<div class="contact-item">
+
+<div class="contact-icon">
+✉
+</div>
+
+<div>
+
+<h4>Email</h4>
+
+<p>
+jnvputo.koderma@gmail.com
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="official">
+
+<small>
+OFFICIAL SCHOOL INFORMATION
+</small>
+
+<h2>
+Navodaya Vidyalaya Samiti
+</h2>
+
+<p>
+For current notices, admissions, results and
+official updates, always verify information
+through the official Navodaya Vidyalaya Samiti
+website.
+</p>
+
+<a
+href="https://navodaya.gov.in/nvs/nvs-school/KODERMA/en/home/"
+target="_blank"
+class="btn"
+>
+Open Official Page ↗
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div>
+
+<b>JNV Puto Koderma</b>
+
+<span>
+Puto, Koderma, Jharkhand
+</span>
+
+</div>
+
+
+<div>
+
+© <span id="year"></span>
+JNV Puto Koderma
+
+</div>
+
+</footer>
+
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+</script>
+
+</body>
+
+</html>
